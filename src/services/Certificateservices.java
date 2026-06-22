@@ -1,7 +1,10 @@
 package services;
 
-public interface Certificateservices {
-    void issueCertificate();
+import models.Certificate;
 
-    void verifyCertificate(String certificateld);
+public interface Certificateservices {
+
+    void issueCertificate(Certificate certificate);
+
+    void verifyCertificate(String certificateId);
 }
